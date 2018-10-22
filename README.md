@@ -13,3 +13,19 @@ write them back in the following folder structure: `year=<YEAR>/month=<MONTH>/da
  * Each file's records is sorted by their time in ascending order
  * The 'time' column in the output file should be as a timestamp data type (e.g: `2018-08-06T17:40:20.000+03:00`)
 
+## Test the code
+```
+sbt test
+```
+
+## Build a fat JAR
+
+```
+sbt assembly
+```
+
+## Run the code
+
+```
+java -jar target/scala-2.11/flink-scala-interview-assembly-1.0.jar
+```
